@@ -97,7 +97,7 @@ function App() {
     e.preventDefault();
     const newtexts = {
       time: moment(new Date().fromNow),
-      id: new Date().getSeconds(),
+      id: new Date().getMilliseconds(),
       text: inputText 
     };
     settext([...text, newtexts]);
